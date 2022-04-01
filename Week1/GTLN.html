@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm max của dãy số</title>
+</head>
+<body>
+<script>
+    let N=Number(prompt("Nhập số lượng các giá trị trong dãy số"));
+    let arr=[];
+    for(i=1; i<=N; i++) {
+        let nhapso = Number(prompt("nhập giá trị thứ"+" "+i));
+        arr.push(nhapso);
+    }
+    let Max= arr[1];
+    for (dem=1; dem<=N; dem++){
+        if (Max<=arr[dem])
+            Max = arr[dem];
+    }
+    document.write("Số lớn nhất trong dãy là"+" "+Max);
+</script>
+</body>
+</html>
