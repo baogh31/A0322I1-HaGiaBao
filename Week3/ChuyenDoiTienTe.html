@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form >
+
+    <label for="sotien">Amount</label>
+    <input style="display: block" type="text" id="sotien">
+
+    <label for="dauvao">From Currency </label>
+    <select id="dauvao" style="display: block">
+        <option value="1">vnd</option>
+        <option value="2">dollar</option>
+    </select>
+
+    <label for="daura">To Currency</label>
+    <select id="daura" style="display:block;">
+        <option value="3" >vnd</option>
+        <option value="4">dollar</option>
+    </select>
+</form>
+<hr>
+<button name="quydoi" onclick="quydoitien()">Đổi tiền</button>
+<script>
+    function quydoitien() {
+        let a = document.getElementById("dauvao").value;
+        let b = document.getElementById("daura").value;
+
+        if ((a === "1" && b === "3") || (a === "2" && b==="4"))
+            document.write("Nhập lại")
+        else if (a === "1" && b === "4")
+            document.write("$"+" "+(document.getElementById("sotien").value) / 23000 );
+        else if (a === "2" && b === "3")
+            document.write(document.getElementById("sotien").value * 23000+" "+"VND");
+    }
+</script>
+</body>
+</html>
