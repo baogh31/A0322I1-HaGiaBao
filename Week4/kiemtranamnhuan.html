@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuchanh</title>
+</head>
+<body>
+<script>
+    let nam = parseInt(prompt("Nhập năm"));
+    if (nam % 4 ==0){
+        if (nam % 100 ==0 && nam % 400 != 0 ) { document.write(nam+" "+ "không là năm nhuận");}
+        else document.write(nam+" "+ "là năm nhuận");
+    }
+    else document.write(nam+" "+ "không phải là năm nhuận");
+</script>
+</body>
+</html>

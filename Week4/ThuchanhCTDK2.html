@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CTDK2</title>
+</head>
+<body>
+<script>
+    alert(" Bài 1 Chuyển đổi nhiệt độ");
+    let cel=Number(prompt("Nhập nhiệt độ theo độ C"));
+    alert(cel +" "+"độ C ="+" "+(9/5*cel+32) +" "+"độ F");
+</script>
+<script>
+    alert("Bài 2 Chuyển đổi độ dài từ mét sang feet");
+    let m=Number(prompt("Nhập độ dài theo đơn vị mét"));
+    if (m<0) alert("nhập lại");
+    else
+        alert(m +" "+"mét ="+" "+(m*3.2808) +" "+"feet");
+</script>
+<script>
+    alert("Bài 3+4+5 Tính diện tích");
+    let a=Number(prompt("Nhập cạnh a"));
+    let b=Number(prompt("Nhập cạnh b"));
+    alert("Diện tích hình vuông cạnh a là: "+" "+ a*a+" "+"dvdt");
+    alert("Diện tích chữ nhật có 2 cạnh a và b: "+" "+ (a+b)*2+" "+"dvdt");
+    alert("Diện tích hình tam giác vuông có 2 cạnh kề a và b là: "+" "+ a*b/2+" "+"dvdt");
+</script>
+<script>
+    alert("Bài 6 giải phương trình bậc nhất ax+b=0");
+    let heso1=Number(prompt("Nhập a"));
+    let heso2=Number(prompt("Nhập b"));
+    if ( heso1 === 0 && heso2 === 0) alert("Phương trình có vô số nghiệm");
+    else if (heso1 === 0 && heso2 !== 0) alert("Phương trình vô nghiệm");
+    else alert("Phương trình có nghiệm là:"+" "+ (0-heso2)/heso1);
+</script>
+<script>
+    alert("Bài 7 giải phương trình bậc 2 ax^2+bx+c=0 ");
+    let hs1= Number(prompt("nhập a"));
+    let hs2= Number(prompt("nhập b"));
+    let hs3= Number(prompt("nhập c"));
+    let delta= (hs2*hs2-4*hs1*hs3);
+    if (delta<0) alert("Phương trình vô nghiệm");
+    else if (delta === 0) alert("Phương trình có nghiệm kép:"+" "+ (0-hs2)/2/hs1);
+    else if (delta>0) alert("Phương trình có 2 nghiệm phân biệt:"+ " "+"x1="+" "+(hs2+Math.sqrt(delta))/2/hs1+"và"+" "+"x2="+" "+(0-hs2+Math.sqrt(delta))/2/hs1);
+</script>
+<script>
+    alert("Bài 8 Kiểm tra tuổi một người");
+    let tuoi= parseInt((prompt("nhập tuổi")));
+    if (tuoi<120 && tuoi>0) alert("đây là tuổi của một người");
+    else alert("không phải tuổi của một người");
+</script>
+<script>
+    alert("Bài 9 kiểm tra 3 cạnh tam giác");
+    let c1= Number(prompt("Nhập cạnh thứ nhất"));
+    let c2= Number(prompt("Nhập cạnh thứ hai"));
+    let c3= Number(prompt("Nhập cạnh thứ ba"));
+    if ( c1 <= 0 || c2 <=0 || c3 < 0) alert(" Nhập sai");
+    else if (c1+c2-c3>0 && c1+c3-c2>0 && c3+c2-c1>0) alert(" là 3 cạnh của tam giác ");
+    else alert("không phải là 3 cạnh của tam giác");
+</script>
+<script>
+    alert("Bài 12 Tính lãi ngân hàng");
+    let sotienbandau=Number(prompt("Nhập số tiền ban đầu"));
+    let sothangchovay=Number(prompt("Nhập Số tháng cho vay"));
+    let laisuat=Number(prompt("Nhập lãi suất hàng tháng"));
+    let lainganhang;
+    for ( let p =1 ; p <= sothangchovay; p++){
+        lainganhang = sotienbandau * laisuat;
+        sotienbandau += lainganhang;
+    }
+    alert("Lãi ngân hàng sau"+" "+sothangchovay+" "+"tháng cho vay là"+" "+lainganhang+"đồng");
+    <!-- E k biết tính giá điện với thuế thu nhập cá nhân như thế nào ạ :"D nên chưa làm bài 10 11-->
+</script>
+</body>
+</html>

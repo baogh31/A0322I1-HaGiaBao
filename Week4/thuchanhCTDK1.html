@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CTDK1</title>
+</head>
+<body>
+<script>
+    alert("kiểm tra a có chia hết cho b");
+    let a= parseInt(prompt("nhập số a"));
+    let b= parseInt(prompt("nhập số b"));
+    if (a === 0 && b === 0) {
+        alert("Nhập lại");
+    }
+    else if (a % b === 0) {
+        alert("a chia hết cho b");
+    }
+    else alert("a không chia hết cho b");
+</script>
+<script>
+    alert("kiểm tra tuổi");
+    let tuoi=parseInt(prompt("nhập tuổi"));
+    if (tuoi>=16) {
+        alert("Đủ tuổi học lớp 10");
+    }
+    else alert("Không đủ tuổi học lớp 10");
+</script>
+<script>
+    alert(" số nguyên");
+    let intnum=parseInt(prompt("nhập số"));
+    if (intnum >0) {
+        alert("Số lớn hơn 0");
+    }
+    else alert("số không lớn hơn 0");
+</script>
+<script>
+    alert("Kiểm tra số lớn nhất");
+    let m=parseInt(prompt("nhập số thứ nhất"));
+    let n=parseInt(prompt("nhập số thứ hai"));
+    let p=parseInt(prompt("nhập số thứ ba"));
+    if (m >=n && m>=p) {
+        alert(m+" "+"là số lớn nhất");
+    }
+    else if (n>=p) {
+        alert(n+ " "+" là số lớn nhất");
+    }
+    else alert(p+ " "+" là số lớn nhất");
+</script>
+<script>
+
+    alert("Xếp hạng học lực");
+    let diem =Number(prompt("Nhập điểm"))
+    if (diem>=9) {
+        alert("Học sinh xuất sắc");
+    }
+    else if(diem>=8){
+        alert("Học sinh giỏi");
+    }
+    else if(diem>=6.5){
+        alert("Học sinh khá");
+    }
+    else {
+        alert("Học sinh trung bình yếu");
+    }
+</script>
+<script>
+    alert("tính hoa hồng");
+    let ds=Number(prompt("Nhập doanh số (vnd)"));
+    if (ds>100000000) alert("hoa hồng 5%:"+" "+ ds*0.05);
+    else if (ds>50000000) alert("hoa hồng 3%:"+" "+ ds*0.03);
+    else if (ds>10000000) alert("hoa hồng 1%:"+" "+ ds*0.01);
+    else if (ds>0) alert("không có hoa hồng");
+    else alert("lỗ");
+</script>
+</body>
+</html>
