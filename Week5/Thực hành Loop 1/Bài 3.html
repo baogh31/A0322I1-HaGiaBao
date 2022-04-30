@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 3</title>
+</head>
+<body>
+<script>
+  //bài 3: in 20 số thuộc dãy fibonacci
+  let sotruoc = 0;
+  let sosau = 1;
+  let n;
+  document.write("Số đầu tiên của chuỗi Fibonacci:" + " " + "0<br>")
+  document.write("Số thứ 1 của chuỗi Fibonacci:" + " " + "1<br>")
+  for (let i = 2; i <= 20; i++) {
+    n = sotruoc + sosau;
+    document.write("số thứ" + " " + i + " " + "của chuỗi Fibonacci:" + " " + n + "<br>")
+    sotruoc = sosau;
+    sosau = n;
+  }
+</script>
+</body>
+</html>

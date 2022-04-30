@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loop2</title>
+</head>
+<body>
+<script>
+    //bài 1 (Đề là in dãy Fibonacci, em in ra 30 số thôi ạ)
+    document.write("0<br>1 <br>")
+    let sotruoc = 0;
+    let sosau = 1;
+    let n;
+    for (let i = 1; i < 29; i++) {
+        n = sotruoc + sosau;
+        document.write(n + "<br>");
+        sotruoc = sosau;
+        sosau = n;
+    }
+</script>
+<script>
+    //bài 2 (in ra các tam giác vuông)
+    /*
+    *
+    **
+    ***
+    ****
+    *****
+     */
+    let star1;
+    let hang1;
+    for (hang1 = 1; hang1 <= 5; hang1++) {
+        for (star1 = 1; star1 <= hang1; star1++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+    let star2;
+    let hang2;
+    for (hang2 = 1; hang2 <= 5; hang2++) {
+        for (star2 = 5; star2 >= hang2; star2--) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+    let space3;
+    let hang3;
+    let star3;
+    for (hang3 = 1; hang3 <= 5; hang3++) {
+        for (space3 = 4; space3 >= hang3 - 1; space3--) {
+            document.write("_");
+        }
+        for (star3 = 1; star3 <= hang3; star3++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+    let space4;
+    let hang4;
+    let star4;
+    for (hang4 = 1; hang4 <= 5; hang4++) {
+        for (space4 = 0; space4 <= hang4 - 1; space4++) {
+            document.write("_");
+        }
+        for (star4 = 5; star4 >= hang4; star4--) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
+
+</script>
+</body>
+</html>

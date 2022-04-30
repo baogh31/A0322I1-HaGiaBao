@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 8</title>
+</head>
+<body>
+<button id="choi" onclick="play()">Chơi</button>
+<script>
+  function play() {
+    let guess1 = Number(prompt("Cận dưới khoảng số bạn muốn đoán:"));
+    let guess2 = Number(prompt("Cận trên khoảng số bạn muốn đoán"));
+    let num = Math.floor(Math.random() * (guess2 - guess1 + 1)) + guess1;
+    for (let i = 1; i <= 3; i++) //em đặt ở đây 3 lượt đoán
+    {
+      let dudoan = Number(prompt("Nhập vào số bạn đoán (thuộc khoảng dự đoán)"))
+      if (dudoan === num) {
+        alert("Bái bai");
+        break;
+      } else if (dudoan > num) {
+        alert("Số bạn nhập lớn hơn số được chọn :( lại nào");
+      } else if (dudoan < num) {
+        alert("Số bạn nhập bé hơn số được chọn :( lại nào");
+      } else
+        alert("Số bạn nhập nằm ngoài khoảng đã cho :D")
+    }
+  }
+</script>
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 2</title>
+</head>
+<body>
+<script>
+  for (let i = 1; i < 100; i++) {
+    let temp = Number(prompt("Nhập vào nhiệt độ"));
+    if (temp <= 100 && temp >= 20) {
+      document.write("Kết thúc");
+      break;
+    }
+    if (temp > 100 || temp < 20) {
+      alert("Nhập lại")
+    }
+  }
+</script>
+</body>
+</html>

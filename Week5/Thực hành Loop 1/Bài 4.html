@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 4</title>
+</head>
+<body>
+<script>
+  //bài 4: tìm số đầu tiên thuộc dãy Fibonacci chia hết cho 5
+  let sotruoc = 0;
+  let sosau = 1;
+  let n;
+  for (let i = 2; i <= 200; i++) {
+    n = sotruoc + sosau;
+    sotruoc = sosau;
+    sosau = n;
+    if (n % 5 === 0) {
+      document.write("Số đầu tiên thuộc dãy Fibonacci chia hết cho 5 là:" + " " + n);
+      break;
+    }
+  }
+</script>
+</body>
+</html>
