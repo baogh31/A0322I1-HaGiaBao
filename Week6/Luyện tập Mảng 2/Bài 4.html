@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 3</title>
+</head>
+<body>
+<script>
+ //Viết một chương trình để đếm số từ trong một chuỗi
+  let mang= [];
+  let dem=0;
+  let dodai=Number(prompt("Nhập độ dài mảng"));
+  for(let i=1;i<=dodai;i++){
+    let input=Number(prompt("Nhập vào phần tử mảng"));
+    mang.push(input);
+    if(input * 1 !== input )
+    {
+      dem++
+    }
+  }
+  document.write("Số từ trong mảng:"+" "+dem)
+
+</script>
+</body>
+</html>

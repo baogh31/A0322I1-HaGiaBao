@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bai 8</title>
+</head>
+<body>
+<script>
+  //Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử.
+  //Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
+  let dodai = 10;
+  let arr = [];
+  let i = 1;
+  for (; i <= dodai; i++) {
+    let nhapso = Number(prompt("nhập số nguyên thuộc chuỗi 10 phần tử (số thứ"+" "+i+" "+")"));
+    arr.push(nhapso);
+  }
+  arr.sort(
+    function (a, b) {
+    return b - a
+  })
+  document.write(arr.toString());
+</script>
+
+</body>
+</html>

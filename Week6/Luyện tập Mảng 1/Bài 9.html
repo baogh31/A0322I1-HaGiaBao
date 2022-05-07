@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 9</title>
+</head>
+<body>
+<script>
+  //Viết chương trình khởi tạo/nhập vào 2 mảng số nguyên gồm 10 phần tử, gọi là mảng a và b.
+  //Mảng c là một mảng được khai báo gồm 20 phần tử số nguyên.
+  //Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a vào mảng c. Hiển thị mảng c.
+  let a = [];
+  let b = [];
+  for (let x = 1; x <= 10; x++) {
+    let nhapsoa = Number(prompt("nhập số nguyên thuộc mảng a (số thứ"+" "+x+" "+")"));
+    a.push(nhapsoa);
+  }
+  for (let y = 1; y <= 10; y++) {
+    let nhapsob = Number(prompt("nhập số nguyên thuộc mảng b (số thứ"+" "+y+" "+")"));
+    b.push(nhapsob);
+  }
+  let c = a.concat(b);
+  document.write("chuỗi c:" + "<br>" + c.toString());
+</script>
+</body>
+</html>

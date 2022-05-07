@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 5</title>
+</head>
+<body>
+<script>
+  //Viết chương trình khởi tạo mảng số nguyên
+  // Đếm số nguyên âm
+  let dodai = Number(prompt("nhập độ dài mảng"));
+  let arr = [];
+  let i = 1;
+  let x = 0;
+  let dem = 0;
+  for (; i <= dodai; i++) {
+    let nhapso = Number(prompt("nhập số nguyên"));
+    arr.push(nhapso);
+  }
+  for (; x <= dodai - 1; x++) {
+    if (arr[x] < 0) dem += 1;
+  }
+  document.write("Số lượng số nguyên âm trong chuỗi là:" + " " + dem);
+</script>
+</body>
+</html>
+

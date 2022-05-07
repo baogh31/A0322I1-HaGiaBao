@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Từ điển đơn giản</title>
+</head>
+<body>
+<label for="tienganh" style="display: block">Tra từ</label>
+<input type="text" id="tienganh"/>
+<button name="button" type="button" onclick=trans()>Tra</button>
+<script>
+  let eng=["house","harsh","bee", "computer","mouse",];
+  let viet=["nhà","khắc nghiệt","ong","máy tính", "chuột"];
+  let x=0;
+  function trans(){
+    if (document.getElementById("tienganh").value === eng[x])
+      alert(viet[x])
+    else
+      document.write("Chưa cập nhật từ này")
+  }
+
+</script>
+</body>
+</html>

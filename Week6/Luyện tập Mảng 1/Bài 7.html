@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 7</title>
+</head>
+<body>
+<script>
+  //Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+  //Chương trình kiểm tra xem V có thuộc mảng đã cho không
+  // nếu V thuộc mảng đã cho xoá V khỏi mảng
+  //(Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần tử cuối cùng của mảng)
+  let dodai = 10;
+  let arr = []; //mảng gốc
+  let result = []; //mảng đã bỏ V
+  let V = Number(prompt("nhập số V cần kiểm tra"));
+  document.write("V là:" + " " + V + "<br>");
+  document.write("Mảng gốc là:" + "<br>");
+  for (let i = 1; i <= dodai; i++) {
+    let nhapso = Number(prompt("nhập số nguyên thuộc chuỗi 10 phần tử (số thứ"+" "+i+" "+")"));
+    arr.push(nhapso);
+  }
+  document.write(arr.toString());
+  document.write("<br>" + "Mảng đã bỏ V:" + "<br>");
+  for (let a = 0; a <= dodai - 1; a++) {
+    if (V !== arr[a]) {
+      result.push(arr[a]);
+    }
+  }
+  result.push(0);
+  document.write(result.toString());
+</script>
+</body>
+</html>

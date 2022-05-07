@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 5</title>
+</head>
+<body>
+<script>
+  //Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+  let chuoi1 = [];
+  let chuoi2 = [];
+  let length1 = Number(prompt("Nhập độ dài chuỗi 1"));
+  let length2 = Number(prompt("Nhập độ dài chuỗi 2"));
+  if (length1 !== length2) {
+    alert("Hai chuỗi khác nhau")
+  }
+  for (let i = 1; i <= length1; i++) {
+    let input1 = prompt("Nhập phần tử chuỗi 1")
+    chuoi1.push(input1)
+  }
+  for (let j = 1; j <= length2; j++) {
+    let input2 = prompt("Nhập phần tử chuỗi 2")
+    chuoi2.push(input2)
+  }
+  for (let dem = 1; dem <= length1; dem++) {
+    if (chuoi1[dem] !== chuoi2[dem]) {
+      alert("Hai chuỗi không giống nhau")
+      break;
+    }
+  }
+  alert("Hai chuỗi giống nhau");
+</script>
+</body>
+</html>
+

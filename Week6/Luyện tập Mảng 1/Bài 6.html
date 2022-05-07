@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 6</title>
+</head>
+<body>
+<script>
+  //Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+  //Chương trình tìm xem V có nằm trong mảng số nguyên không? Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".
+  let dodai = 10;
+  let arr = [];
+  let check = false;
+  for (let i = 1; i <= dodai; i++) {
+    let nhapso = Number(prompt("Nhập số nguyên"));
+    arr.push(nhapso);
+  }
+  let V = Number(prompt("Nhập số V cần kiểm tra"));
+  for (let x = 0; x <= dodai - 1; x++) {
+    if (V === arr[x]) {
+      check = true
+    }
+  }
+  if (check === true) document.write("V is in the array")
+  else document.write("V is not in the array");
+</script>
+</body>
+</html>

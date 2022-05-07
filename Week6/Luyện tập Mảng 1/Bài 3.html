@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 3</title>
+</head>
+<body>
+<script>
+  //Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó.
+  // In ra giá trị trung bình của các phần tử trong mảng.
+  let dodai=Number(prompt("nhập độ dài mảng"));
+  let arr=[];
+  let max;
+  let i=1;
+  let x=0;
+  let tong= 0;
+  for(; i<=dodai; i++) {
+    let nhapso = Number(prompt("nhập số nguyên"));
+    arr.push(nhapso);
+  }
+  for(;x<=dodai-1; x++) {
+    if (arr[x+1] > arr[x]){
+      max= arr[x+1];
+    }
+    else {max=arr[x]}
+    tong+=arr[x]
+  }
+
+  document.write("Số lớn nhất là:"+" "+max+"<br>"+" "+"Giá trị trung bình là:"+" "+tong/dodai);
+
+</script>
+</body>
+</html>
