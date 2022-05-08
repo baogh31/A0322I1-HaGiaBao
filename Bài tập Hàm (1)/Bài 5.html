@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 5</title>
+</head>
+<body>
+<script>
+let stars1=["Polaris","Aldebaran", "Deneb", "Vega", "Altair", 'Dubhe', "Regulus"]
+let stars2=['UrsaMinor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'UrsaMajor', 'Leo']
+let input=prompt("Nhập tên ngôi sao")
+function check(){
+  for (let i=0; i<=6;i++){
+    if (input === stars1[i]){
+      document.write(stars2[i])
+      break
+    }
+    else document.write("Nhập lại")
+  }
+}
+check(input)
+</script>
+</body>
+</html>
