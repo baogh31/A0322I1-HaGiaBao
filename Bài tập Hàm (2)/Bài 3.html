@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 3</title>
+</head>
+<body>
+<script>
+  // Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào.
+  // Gọi hàm vừa xây dựng được.
+  let n = Number(prompt("Nhập số"));
+  let gthua = 1
+
+  function giaithua() {
+    for (let i = 1; i <= n; i++) {
+      gthua *= i
+    }
+    return gthua
+  }
+
+  let ketqua = giaithua(n)
+  document.write("n!=" + ketqua)
+</script>
+</body>
+</html>

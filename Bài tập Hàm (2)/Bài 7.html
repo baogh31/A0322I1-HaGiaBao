@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 7</title>
+</head>
+<body>
+<script>
+  //Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+  let n1 = Number(prompt("Nhập số thứ nhất"))
+  let n2 = Number(prompt("Nhập số thứ 2"))
+  document.write('"' + n1 + ' ' + n2 + '"=>')
+
+  function changepos() {
+    let x = n2
+    n2=n1
+    n1 = x
+    document.write('"' + n1 + ' ' + n2 + '"->')
+  }
+  changepos()
+
+</script>
+</body>
+</html>

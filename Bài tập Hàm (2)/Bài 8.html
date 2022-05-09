@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bai 8</title>
+</head>
+<body>
+<script>
+  //Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+  let arr=[];
+  let rearr=[];
+  let dodai=Number(prompt("Nhập độ dài mảng"))
+  for (let i=0;i<dodai;i++){
+    let num=Number(prompt("Nhập phần tử thứ"+" "+(i+1)))
+    arr.push(num)
+  }
+  function reverse(){
+    for(let j=dodai-1;j>=0;j--){
+      rearr.push(arr[j])
+    }
+    document.write(rearr.toString())
+  }
+  reverse()
+
+</script>
+
+</body>
+</html>

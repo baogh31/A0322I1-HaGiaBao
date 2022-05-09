@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 6</title>
+</head>
+<body>
+<script>
+  // Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
+  // Nếu là nguyên dương trả về true, ngược lại trả về false.
+  let num = Number(prompt("Nhập số cần kiểm tra"))
+
+  function checknum(n) {
+    if (n > 0) {
+      return true
+    } else {
+      return false
+    }
+  }
+
+  let ketqua = checknum(num)
+  document.write(ketqua)
+</script>
+</body>
+</html>
