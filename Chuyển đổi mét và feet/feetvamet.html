@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chuyển đổi</title>
+</head>
+<body>
+<button onclick="chuyendoi1()">Đổi feet sang mét</button>
+<button onclick="chuyendoi2()">Đổi mét sang feet</button>
+<script>
+  let l1=Number(prompt("Nhập độ dài cần đổi (feet sang mét)"))
+  let l2=Number(prompt("Nhập độ dài cần đổi (mét sang feet)"))
+  function chuyendoi1() {
+    document.write(l1 + " " + "ft=" + l1 * 3.279 + "m");
+    return l1;
+  }
+  function chuyendoi2(){
+    document.write(l2 + " " + "m=" + l2 * 0.305 + "ft");
+    return l2;
+  }
+</script>
+</body>
+</html>
