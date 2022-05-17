@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 3</title>
+</head>
+<body>
+<script>
+  let hang = Number(prompt("Nhập chiều cao h"))
+  let sao
+  let space
+  let i
+  let j
+  for (i = 1; i <= hang; i++) {
+    j = 1 + (i - 1) * 2
+    for (space = hang - i; space >= 0; space--) {
+      document.write("&nbsp;&nbsp")
+    }
+    for (sao = 1; sao <= j; sao++) {
+      document.write("*")
+    }
+    document.write("<br>")
+    j++
+  }
+</script>
+</body>
+</html>

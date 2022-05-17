@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 2</title>
+</head>
+<body>
+<script>
+  let canh = Number(prompt("Nhập cạnh h của tam giác vuông cân"))
+  if (canh <= 1) {
+    alert("Nhập sai")
+  } else if (canh === 2) {
+    document.write("*<br>**")
+  } else if (canh > 2) {
+    document.write("*<br>**<br>")
+    for (let row = 3; row <= canh - 1; row++) {
+      document.write("*")
+      for (let j = 2; j <= row - 1; j++) {
+        document.write("&nbsp;&nbsp")
+      }
+      document.write("*<br>")
+    }
+    for (let hangcuoi = 1; hangcuoi <= canh; hangcuoi++) {
+      document.write("*")
+    }
+  }
+</script>
+</body>
+</html>

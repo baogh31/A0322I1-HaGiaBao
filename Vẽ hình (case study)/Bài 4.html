@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 4</title>
+</head>
+<body>
+<script>
+  let hang = Number(prompt("Nhập chiều cao h"))
+  let space
+  let spaceinner
+  let i
+  let j
+  for (i = 1; i <= hang; i++) {
+    j = 0 + ((i - 1) - 1) * 2 //cấp số cộng, tạo khoảng cách bên trong, số hạng đâu là 0
+    if (i === 1) {
+      for (let n = 1; n <= (hang - 1); n++) {
+        document.write("&nbsp;&nbsp") //tạo khoảng cách bên trái dòng 1
+      }
+      document.write("*<br>") //ngôi sao dòng 1
+    } else if (i !== hang) {
+      for (space = hang - i; space >= 1; space--) { //tạo khoảng cách bên trái tam giác từ dòng 2 đến dòng áp chót
+        document.write("&nbsp;&nbsp")
+      }
+      document.write("*") //vẽ cạnh trái tam giác
+      for (spaceinner = 0; spaceinner <= j; spaceinner++) { //khoảng trống bên trong tam giác
+        document.write("&nbsp;&nbsp")
+      }
+      document.write("*<br>") //vẽ hai cạnh bên
+      j++
+    } else if (i === hang) {
+      for (let n = 1; n <= (1 + (hang - 1) * 2); n++) { // in cạnh đáy
+        document.write("*")
+      }
+    }
+  }
+</script>
+</body>
+</html>

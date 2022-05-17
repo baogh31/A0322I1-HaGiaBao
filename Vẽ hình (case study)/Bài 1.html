@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  //chiều dài là hàng dọc, chiều rộng là ngang
+  let cd = Number(prompt("Nhập chiều dài n"))
+  let cr = Number(prompt("Nhập chiều rộng m"))
+  if (cr <= 1 || cd <= 1) {
+    alert("Nhập lại")
+  }
+  if (cr >= cd) {
+    alert("Nhập ngược")
+  } else {
+    for (let i = 1; i <= cr; i++) {
+      document.write("*")
+    }
+    document.write("<br>")
+    for (let i = 2; i <= cd - 1; i++) {
+      document.write("*")
+      for (let j = 2; j <= cr - 1; j++) {
+        document.write("&nbsp;&nbsp")
+      }
+      document.write("*<br>")
+    }
+    for (let i = 1; i <= cr; i++) {
+      document.write("*")
+    }
+  }
+</script>
+</body>
+</html>
