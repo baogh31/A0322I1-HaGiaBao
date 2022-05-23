@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  let str = prompt("Nhập tên")
+
+  function difletter(str) {
+    document.write("Xâu:"+" "+str+"<br>")
+    let mangcospace = str.split(" ")
+    let mangkhongspace=mangcospace.join("") //loại dấu space khỏi mảng
+    let mang= mangkhongspace.split("")
+    for (let i = 1; i <= mang.length - 1; i++) {
+      for (let j = 0; j <= i - 1; j++) {
+          if (mang[i] === mang[j]) {
+            mang.splice(j, 1)
+          }
+      }
+    }
+    document.write("Kí tự khác nhau:" + " " + mang.toString() + "<br>(" + mang.length + ")")
+  }
+
+  difletter(str)
+</script>
+</body>
+</html>

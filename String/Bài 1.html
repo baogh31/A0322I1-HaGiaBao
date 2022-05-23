@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 1</title>
+</head>
+<body>
+<script>
+  let str = prompt("Nhập tên")
+  document.write("Chuỗi ban đầu:" + " " + str + "<br>")
+
+  function titlecase(name) {
+    let mang = name.toLowerCase().split(" ")
+    let kq = mang.map(function (val) {
+        return val.replace(val.charAt(0), val.charAt(0).toUpperCase())
+      }
+    )
+    document.write("=>" + kq.join(" ") + "<br>")
+  }
+
+  function longest(name) {
+    let mang = name.toLowerCase().split(" ")
+    let max = 0
+    for (let i = 0; i <= mang.length - 1; i++) {
+      if (mang[i + 1] >= mang[i]) {
+        max = i + 1
+      } else {
+        max = i
+      }
+    }
+    let longest = mang[max].replace(mang[max].charAt(0), mang[max].charAt(0).toUpperCase())
+    document.write("Chuỗi dài nhất là:" + " " + longest)
+  }
+
+  function main(name) {
+    titlecase(name)
+    longest(name)
+  }
+
+  main(str)
+
+</script>
+</body>
+</html>
