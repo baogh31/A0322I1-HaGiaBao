@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 2</title>
+</head>
+<body>
+<script>
+  let A = []
+  let B = []
+  let lengthA = parseInt(prompt("Nhập độ dài mảng A"))
+  let lengthB = parseInt(prompt("Nhập độ dài mảng B"))
+
+  if (lengthA <= 0 || lengthB <= 0) {
+    alert("Nhập lại")
+  }
+
+  //tạo mảng A
+  for (let i = 0; i <= lengthA - 1; i++) {
+    let kytuA = Number(prompt("Nhập kí tự thuộc mảng A"))
+    A.push(kytuA)
+  }
+  //tạo mảng B
+  for (let i = 0; i <= lengthB - 1; i++) {
+    let kytuB = Number(prompt("Nhập kí tự thuộc mảng B"))
+    B.push(kytuB)
+  }
+  let m = []
+  for (let i = 0; i <= lengthB - 1; i++) {
+    if (A.indexOf(B[i]) === -1) {
+      m.push(B[i])
+    }
+  }
+  document.write("Mảng A:" + " " + A.toString() + "<br>")
+  document.write("Mảng B:" + " " + B.toString() + "<br>")
+  document.write("Mảng chứa các phần tử thuộc B[] không thuộc A[]:" + "<br>" + "MissingValue=[" + m.toString() + "]")
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 5</title>
+</head>
+<body>
+<button id="goimon" onclick="goimon()">Lựa chọn</button>
+<script>
+  document.write("<br>Menu<br>")
+  document.write("1-cafe<br>")
+  document.write("2-cam vắt<br>")
+  document.write("3-nước ép cà rốt<br>")
+  document.write("4-nước ép cà chua<br>")
+  document.write("5-nước lọc<br>")
+  document.write("6-nước dừa<br>")
+  document.write("7-thoát gọi món<br>")
+
+  function goimon() {
+    let tong = 0
+    let mon
+    let cf = 0
+    let cam = 0
+    let carrot = 0
+    let water = 0
+    let coco = 0
+    let tomato = 0
+    do {
+      mon = Number(prompt("Nhập số thứ tự món muốn gọi:"))
+      if (mon===7){
+        break
+      }
+      let quan = Number(prompt("Nhập số lượng"))
+      switch (mon) {
+        case 1: {
+          cf += quan
+          document.write(cf +" "+ "Cafe: 15k/1p<br>")
+          tong += 15 * quan
+          break
+        }
+        case 2: {
+          cam += quan
+          document.write(cam+" "+" Cam vắt: 20k/1p<br>")
+          tong += 20 * quan
+          break
+        }
+        case 3: {
+          carrot += quan
+          document.write(carrot+" "+"Nước ép cà rốt: 20k/1p<br>")
+          tong += 20 * quan
+          break
+        }
+        case 4: {
+          tomato += quan
+          document.write(tomato+" "+"Nước ép cà chua: 20k/1p<br>")
+          tong += 20 * quan
+          break
+        }
+        case 5: {
+          water += quan
+          document.write(water+" "+"Nước lọc: 5k/1p<br>")
+          tong += 5 * quan
+          break
+        }
+        case 6: {
+          coco += quan
+          document.write(coco+" "+"Nước dừa: 25k/1p<br>")
+          tong += 25 * quan
+          break
+        }
+        default:
+          break
+      }
+    }
+    while (mon !== 7)
+    document.write("<hr>Tổng tiền:" + " " + tong.toString() + "k")
+  }
+</script>
+</body>
+</html>

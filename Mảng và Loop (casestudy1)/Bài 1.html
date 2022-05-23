@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let n = Number(prompt("Nhập độ dài mảng a"))
+  let a = []
+  let b = []
+  let tong = 0
+  for (let i = 0; i <= n - 1; i++) {
+    a.push(i)
+    tong += i
+    b.push(tong)
+  }
+  document.write("a[" + (n - 1) +"]<br>b[" + tong + "]")
+
+</script>
+</body>
+</html>

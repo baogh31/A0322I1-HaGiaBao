@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 4</title>
+</head>
+<body>
+<script>
+  let num = parseInt(prompt("Nhập số"))
+  if (typeof num !== "number") {
+    alert("Nhập lại")
+  }
+  let str = String(num) //ép kiểu thành chuỗi
+  document.write(str + "<br>")
+  let trans = str.split("")
+  document.write(trans.toString() + "<br>")
+  for (let i = 0; i <= trans.length - 1; i++) {
+    trans[i] = Number(trans[i]) //ép kiểu thành số
+    switch (trans[i]) {
+      case 0: {
+        document.write("không" + " ")
+      }
+        break
+      case 1: {
+        document.write("một" + " ")
+      }
+        break
+      case 2: {
+        document.write("hai" + " ")
+      }
+        break
+      case 3: {
+        document.write("ba" + " ")
+      }
+        break
+      case 4: {
+        document.write("bốn" + " ")
+      }
+        break
+      case 5: {
+        document.write("năm" + " ")
+      }
+        break
+      case 6: {
+        document.write("sáu" + " ")
+      }
+        break
+      case 7: {
+        document.write("bảy" + " ")
+      }
+        break
+      case 8: {
+        document.write("tám" + " ")
+      }
+        break
+      case 9: {
+        document.write("chín" + " ")
+      }
+        break
+      default: {
+        document.write("0")
+      }
+    }
+  }
+</script>
+</body>
+</html>

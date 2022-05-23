@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 3</title>
+</head>
+<body>
+<script>
+  let A = []
+  let B = []
+  let lengthA = parseInt(prompt("Nhập độ dài mảng A"))
+  let lengthB = parseInt(prompt("Nhập độ dài mảng B"))
+
+  if (lengthA !== lengthB) {
+    alert("Nhập lại")
+  }
+  for (let i = 0; i <= lengthA - 1; i++) {
+    let kytuA = Number(prompt("Nhập kí tự thuộc mảng A"))
+    A.push(kytuA)
+  }
+  for (let i = 0; i <= lengthB - 1; i++) {
+    let kytuB = Number(prompt("Nhập kí tự thuộc mảng B"))
+    B.push(kytuB)
+  }
+  let frac = []
+  for (let i = 0; i <= lengthA - 1; i++) {
+    frac.push((A[i]) / (B[i]))
+  }
+  let max
+  let maxpos
+  for (let i = 1; i <= lengthA - 1; i++) {
+    if (frac[i + 1] >= frac[i]) {
+      max = frac[i + 1]
+      maxpos = i + 1
+    } else {
+      max = frac[i]
+      maxpos = i
+    }
+  }
+  document.write("Mảng A:" + " " + A.toString() + "<br>")
+  document.write("Mảng B:" + " " + B.toString() + "<br>")
+  document.write("Phân số lớn nhất là:" + " " + A[maxpos] + "/" + B[maxpos] + " " + "<br>" + "Chỉ số:" + " " + maxpos)
+</script>
+</body>
+</html>
